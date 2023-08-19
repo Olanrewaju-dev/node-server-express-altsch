@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ketu",
+    "address": "Ketu, Mile-12, Lagos",
+    "size": "Large",
+    "id": 1
+  },
+  {
+    "name": "Ijaiye",
+    "address": "Ijaiye-Ijokoro, Lagos",
+    "size": "Large",
+    "id": 2
+  },
+  {
+    "name": "Sango",
+    "address": "Off Lagos-Abeokuta Express, Ogun",
+    "size": "Medium",
+    "id": 3
+  },
+  {
+    "name": "Alaba International Market",
+    "address": "Alaba, Ojo, Lagos",
+    "size": "Large",
+    "id": 4
+  }
+]
