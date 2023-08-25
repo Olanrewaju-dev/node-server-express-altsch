@@ -22,5 +22,17 @@
     "address": "Alaba, Ojo, Lagos",
     "size": "Large",
     "id": 4
+  },
+  {
+    "name": "Magboro Market",
+    "address": "Obafemi Owode, Ogun state",
+    "size": "Large",
+    "id": 5
+  },
+  {
+    "name": "Iroko Market",
+    "address": "Ibafo, Ogun state",
+    "size": "Large",
+    "id": 6
   }
 ]

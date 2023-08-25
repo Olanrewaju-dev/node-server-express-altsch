@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("fs");
 
 // using middlewares
-const checkBody = require("../global.middleware");
+const globalMiddleware = require("../global.middleware");
 
 const marketsRouter = express.Router();
 
@@ -37,7 +37,7 @@ marketsRouter.get("/:id", (req, res) => {
 });
 
 // [POST REQUEST] Creating market item route
-marketsRouter.post("/", checkBody, (req, res) => {
+marketsRouter.post("/", globalMiddleware.checkBody, (req, res) => {
   const newMarket = req.body;
 
   // dynamically adding id to fruit item inputs

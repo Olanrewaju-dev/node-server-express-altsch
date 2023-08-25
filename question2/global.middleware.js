@@ -1,11 +1,13 @@
 const checkBody = (req, res, next) => {
-  if (!req.body) {
-    res.status(400).json({
-      data: null,
-      error: "Must have a body!",
-    });
+  const parsedBody = req.body;
+  if (Object.keys(parsedBody).length != 0) {
+    console.log(parsedBody);
+    next();
+    return;
   }
-  next();
+  res.status(400).send("Error, didn't send a body to post");
 };
 
-module.exports = checkBody;
+module.exports = {
+  checkBody,
+};
