@@ -1,0 +1,25 @@
+[
+  {
+    "username": "Olanrewaju",
+    "password": 123987,
+    "api_key": "Olanrewaju_123987",
+    "user_type": "admin",
+    "id": 2
+  },
+  {
+    "username": "Daniel",
+    "password": 123787,
+    "api_key": "Daniel_123987",
+    "user_type": "admin",
+    "id": 3
+  },
+  { "username": "Enitan", "password": 122387, "user_type": "user", "id": 4 },
+  { "username": "Yemi419", "password": 142323, "user_type": "user", "id": 5 },
+  { "username": "Oladimeji", "password": 703553, "user_type": "user", "id": 6 },
+  {
+    "username": "Olufunmilola",
+    "password": 49919,
+    "user_type": "user",
+    "id": 7
+  }
+]

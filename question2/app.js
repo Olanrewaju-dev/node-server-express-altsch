@@ -5,18 +5,20 @@ const app = express();
 const port = 4400;
 
 // importing routers
-const fruitRouter = require("./fruits/fruits");
-const marketRouter = require("./markets/markets");
+const programsRouter = require("./programs/programs.router");
+const studentRouter = require("./students/students.router");
+const userRouter = require("./users/users.router");
 
 // using third-party Express middleware
 app.use(bodyParser.json());
 
 // using express router
-app.use("/fruits", fruitRouter);
-app.use("/markets", marketRouter);
+app.use("/programs", programsRouter);
+app.use("/students", studentRouter);
+app.use("/users", userRouter);
 
 app.get("/", (req, res) => {
-  res.status(200).send("Welcome to Altschool fruits website");
+  res.status(200).send("Welcome to Altschool website");
 });
 
 // Catching get request to an unspecified route in the server
@@ -26,5 +28,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is listening on ${port}`);
+  console.log(`Server is listening on port ${port}`);
 });

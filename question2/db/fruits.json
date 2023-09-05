@@ -1,8 +1,0 @@
-[
-  { "name": "apple", "price": 250, "size": "small", "id": 1 },
-  { "name": "tangerine", "price": 150, "size": "medium", "id": 2 },
-  { "name": "coconut", "price": 800, "size": "large", "id": 3 },
-  { "name": "guava", "price": 70, "size": "large", "id": 4 },
-  { "name": "pepper", "price": 300, "size": "large", "id": 5 },
-  { "name": "agbalumo", "price": 300, "size": "large", "id": 6 }
-]
