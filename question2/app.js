@@ -5,16 +5,14 @@ const app = express();
 const port = 4400;
 
 // importing routers
-const programsRouter = require("./programs/programs.router");
-const studentRouter = require("./students/students.router");
+const itemRouter = require("./inventory/item.router");
 const userRouter = require("./users/users.router");
 
 // using third-party Express middleware
 app.use(bodyParser.json());
 
 // using express router
-app.use("/programs", programsRouter);
-app.use("/students", studentRouter);
+app.use("/items", itemRouter);
 app.use("/users", userRouter);
 
 app.get("/", (req, res) => {

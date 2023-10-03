@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Tooth paste",
+    "description": "Dental care liquid for mouth hygiene",
+    "size": "small",
+    "id": 1
+  },
+  {
+    "name": "Bathing soap",
+    "description": "Skin-care product for bathing",
+    "size": "medium",
+    "id": 2
+  },
+  {
+    "name": "Tooth brush",
+    "description": "Soft deep cleaning tooth brush",
+    "size": "small",
+    "id": 3
+  },
+  {
+    "name": "Sun screen",
+    "description": "A skin care and protection lotion against sun rays and emission",
+    "size": "medium",
+    "id": 4
+  }
+]

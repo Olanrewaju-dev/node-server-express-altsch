@@ -21,5 +21,6 @@
     "password": 49919,
     "user_type": "user",
     "id": 7
-  }
+  },
+  { "username": "Rotimi", "password": 999419, "user_type": "user", "id": 8 }
 ]

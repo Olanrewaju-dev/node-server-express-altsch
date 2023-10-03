@@ -33,4 +33,35 @@ const basicAuth = (req, res, next) => {
   }
 };
 
-module.exports = { basicAuth };
+const apiAuth = (req, res, next) => {
+  const authHeader = req.headers;
+  console.log(authHeader);
+
+  if (!authHeader.api_key) {
+    return res
+      .status(401)
+      .json({ message: "This route requires an api_key to access!" });
+  }
+
+  const apiKey = authHeader.api_key;
+
+  console.log(apiKey);
+
+  const exisitngUser = userDb.find((user) => {
+    return user.api_key === apiKey;
+  });
+
+  console.log(exisitngUser);
+
+  if (exisitngUser) {
+    req.user = exisitngUser;
+    next();
+    return;
+  } else {
+    return res.status(401).json({
+      message: "You are not authenticated! Please provide valid credentials",
+    });
+  }
+};
+
+module.exports = { basicAuth, apiAuth };

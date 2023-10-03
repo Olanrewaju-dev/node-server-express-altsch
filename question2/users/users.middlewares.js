@@ -5,7 +5,7 @@ let userDb = [];
 userDb = JSON.parse(fs.readFileSync("./db/users.json", "utf8"));
 
 const validateUserCreation = (req, res, next) => {
-  console.log("Validated user creation!");
+  // console.log("Validated user creation!");
   if (!req.body.username) {
     return res.status(400).json({
       error: "username is required",

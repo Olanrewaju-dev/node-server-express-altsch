@@ -19,7 +19,7 @@ userRouter.get("/:id", controller.getOneUser);
 
 // POST create a user route
 userRouter.post(
-  "/",
+  "/create-user",
   middleware.validateUserCreation,
   middleware.apiAuth,
   controller.createUser

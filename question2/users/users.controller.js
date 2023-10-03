@@ -6,7 +6,7 @@ let userDb = [];
 
 userDb = JSON.parse(fs.readFileSync(userDbPath, "utf8"));
 
-// Creating user in local db
+// POST - Creating user in local db
 const createUser = (req, res) => {
   const newUserInput = req.body;
 
@@ -46,13 +46,14 @@ const createUser = (req, res) => {
     res.status(200).send("Users successfully created.");
   });
 };
+// =======END OF POST OPERATION ========= //
 
-// Fetch all user from local db
+// GET - Fetch all user from local db
 const getAllUser = (req, res) => {
   res.send(userDb);
 };
 
-// Fetch a specified user from db
+// GET - Fetch a specified user from db
 const getOneUser = (req, res) => {
   const userEntry = req.params.id; // grabbing the user id specified in the URL parameter
 
@@ -78,8 +79,9 @@ const getOneUser = (req, res) => {
   //responding with the user details from db
   res.send(userDb[userIndex]);
 };
+// =======END OF GET OPERATION ========= //
 
-// Update a specified user in db
+// PUT - Update a specified user in db
 const updateUser = (req, res) => {
   const userToUpdate = req.body;
 
@@ -110,6 +112,7 @@ const updateUser = (req, res) => {
     res.status(200).send("User details updated successfully.");
   });
 };
+// =======END OF PUT OPERATION ========= //
 
 // Delete a specified user in db
 const deleteUser = (req, res) => {
@@ -129,6 +132,7 @@ const deleteUser = (req, res) => {
     res.send("User deleted successfully");
   });
 };
+// =======END OF DELETE OPERATION ========= //
 
 module.exports = {
   createUser,
